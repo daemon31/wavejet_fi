@@ -1,4 +1,4 @@
-package de.syntaxinstitut.myapplication.data
+package de.dimitrikrylasov.wavejet.data
 
 import com.google.firebase.firestore.DocumentId
 

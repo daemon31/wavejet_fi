@@ -10,7 +10,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "de.syntaxinstitut.myapplication"
+        applicationId "de.dimitrikrylasov.wavejet"
         minSdk 26
         targetSdk 33
         versionCode 1
@@ -37,7 +37,7 @@ android {
     buildFeatures {
         dataBinding true
     }
-    namespace 'de.syntaxinstitut.myapplication'
+    namespace 'de.dimitrikrylasov.wavejet'
 }
 
 dependencies {

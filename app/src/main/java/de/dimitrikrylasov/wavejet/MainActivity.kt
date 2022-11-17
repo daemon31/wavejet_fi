@@ -1,10 +1,10 @@
-package de.syntaxinstitut.myapplication
+package de.dimitrikrylasov.wavejet
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.NavController
-import de.syntaxinstitut.myapplication.databinding.ActivityMainBinding
+import de.dimitrikrylasov.wavejet.databinding.ActivityMainBinding
 
 /**
  * Main Activity, dient als Einstiegspunkt für die App

@@ -1,4 +1,4 @@
-package de.syntaxinstitut.myapplication
+package de.dimitrikrylasov.wavejet
 
 import android.app.Application
 import android.content.ContentValues.TAG
@@ -9,7 +9,7 @@ import androidx.lifecycle.MutableLiveData
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.FirebaseFirestore
-import de.syntaxinstitut.myapplication.data.Numbers
+import de.dimitrikrylasov.wavejet.data.Numbers
 
 /**
  * Das MainViewModel
@@ -21,7 +21,6 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val firebaseAuth = FirebaseAuth.getInstance()
     val db = FirebaseFirestore.getInstance()
 
-    //val client: DuffelApiClient = DuffelApiClient("duffel_test_VBLYDE4AS2Cg7SVBdEYFvrahFvhFqQo1HTygIv7FDje")
 
     private val _numbers = MutableLiveData<Numbers>()
     val numbers: LiveData<Numbers>

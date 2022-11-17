@@ -1,4 +1,4 @@
-package de.syntaxinstitut.myapplication.ui.HomeFragment
+package de.dimitrikrylasov.wavejet.ui.HomeFragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
-import de.syntaxinstitut.myapplication.MainViewModel
-import de.syntaxinstitut.myapplication.R
-import de.syntaxinstitut.myapplication.databinding.FragmentHomeBinding
+import de.dimitrikrylasov.wavejet.MainViewModel
+import de.dimitrikrylasov.wavejet.R
+import de.dimitrikrylasov.wavejet.databinding.FragmentHomeBinding
 
 /**
  * Fragment 1
