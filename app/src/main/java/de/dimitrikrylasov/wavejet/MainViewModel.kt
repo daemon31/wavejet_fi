@@ -65,9 +65,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         var newNumber: Long = 0
 
         newNumber = if (increase) {
-            _numbers.value!!.number + 1
+            _numbers.value!!.number + 5
         } else {
-            _numbers.value!!.number - 1
+            _numbers.value!!.number - 5
         }
 
         db.collection("numbers").document(currentUser.value!!.uid).update("number", newNumber)
