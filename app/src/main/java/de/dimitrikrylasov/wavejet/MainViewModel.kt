@@ -77,20 +77,17 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
         db.collection("numbers").document(currentUser.value!!.uid).update("username", "Dima")
     }
-
-    companion object {
-        fun signUp(mainViewModel: MainViewModel, email: String, password: String, numbers: Numbers) {
-            mainViewModel.firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
+        fun signUp(email: String, password: String, numbers: Numbers) {
+            firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
                 if (it.isSuccessful) {
-                    mainViewModel.firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
-                        mainViewModel._currentUser.value = mainViewModel.firebaseAuth.currentUser
-                        mainViewModel.setNumbers(numbers)
+                    firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
+                        _currentUser.value = firebaseAuth.currentUser
+                        setNumbers(numbers)
                     }
                 } else {
                     Log.e(TAG, "SignUp failed: ${it.exception}")
                 }
             }
         }
-    }
 
 }

@@ -55,8 +55,8 @@ class RegisterFragment : Fragment() {
             val email = binding.tietEmail.text.toString()
             val password = binding.tietPassword.text.toString()
             if (!email.isNullOrEmpty() && !password.isNullOrEmpty()) {
-                val numbers = Numbers(number = 0, username = "LukasAltmann")
-                MainViewModel.signUp(viewModel, email, password, numbers)
+                val numbers = Numbers(number = 0)
+                viewModel.signUp(email, password, numbers)
             }
         }
 

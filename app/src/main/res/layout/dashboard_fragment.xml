@@ -50,16 +50,5 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logo1" />
 
-        <ImageButton
-            android:id="@+id/home_tb_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/bottom_toolbar"
-            app:layout_constraintStart_toStartOf="@+id/bottom_toolbar"
-            app:layout_constraintTop_toTopOf="@+id/bottom_toolbar"
-            app:srcCompat="@drawable/icons8_home_25"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

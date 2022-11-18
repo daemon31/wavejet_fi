@@ -66,7 +66,7 @@ class BpmFragment : Fragment() {
         }
 
         binding.miregalBtn.setOnClickListener {
-            findNavController().navigate(R.id.dashFragment)
+            findNavController().navigate(BpmFragmentDirections.actionBpmFragmentToDashFragment())
 
         }
 
