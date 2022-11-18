@@ -22,7 +22,15 @@
             app:destination="@id/loginFragment" />
     </fragment>
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="de.dimitrikrylasov.wavejet.ui.HomeFragment.HomeFragment"
-        android:label="HomeFragment" />
+        android:id="@+id/bpmFragment"
+        android:name="de.dimitrikrylasov.wavejet.ui.HomeFragment.BpmFragment"
+        android:label="BpmFragment" >
+        <action
+            android:id="@+id/action_bpmFragment_to_dashFragment"
+            app:destination="@id/dashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashFragment"
+        android:name="de.dimitrikrylasov.wavejet.ui.HomeFragment.DashFragment"
+        android:label="DashFragment" />
 </navigation>

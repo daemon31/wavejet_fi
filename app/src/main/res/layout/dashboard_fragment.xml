@@ -30,25 +30,25 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toTopOf="@+id/bottom_toolbar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/logo_inapp"
             app:layout_constraintVertical_bias="0.893"
+            tools:ignore="SpeakableTextPresentCheck"
             tools:listitem="@layout/list_item" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/logo_inapp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/logo1"
-            android:contentDescription="TODO" />
+            app:srcCompat="@drawable/logo1" />
 
         <ImageButton
             android:id="@+id/home_tb_btn"
@@ -58,7 +58,8 @@
             app:layout_constraintEnd_toEndOf="@+id/bottom_toolbar"
             app:layout_constraintStart_toStartOf="@+id/bottom_toolbar"
             app:layout_constraintTop_toTopOf="@+id/bottom_toolbar"
-            app:srcCompat="@drawable/icons8_home_25" />
+            app:srcCompat="@drawable/icons8_home_25"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

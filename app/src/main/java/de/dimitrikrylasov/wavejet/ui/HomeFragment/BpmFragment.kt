@@ -1,6 +1,8 @@
 package de.dimitrikrylasov.wavejet.ui.HomeFragment
 
+import android.content.ContentValues
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,17 +12,17 @@ import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import de.dimitrikrylasov.wavejet.MainViewModel
 import de.dimitrikrylasov.wavejet.R
-import de.dimitrikrylasov.wavejet.databinding.FragmentHomeBinding
+import de.dimitrikrylasov.wavejet.databinding.FragmentBpmBinding
 
 /**
  * Fragment 1
  */
-class HomeFragment : Fragment() {
+class BpmFragment : Fragment() {
 
     /* -------------------- Klassen Variablen -------------------- */
 
     /** Bindet das XML-View mit der Klasse um auf die Elemente zugreifen zu können */
-    private lateinit var binding: FragmentHomeBinding
+    private lateinit var binding: FragmentBpmBinding
 
     /** Das ViewModel zu diesem Fragment */
     private val viewModel: MainViewModel by activityViewModels()
@@ -35,7 +37,7 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentHomeBinding.inflate(inflater)
+        binding = FragmentBpmBinding.inflate(inflater)
 
         return binding.root
     }
@@ -46,6 +48,14 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.btnBpmYes.setOnClickListener{
+            if (it == null) {
+                findNavController().navigate(R.id.dashFragment)
+            }   else {
+                Log.e(ContentValues.TAG, "Da ist was schief gelaufen!")
+            }
+
+        }
 
         binding.hfBtnPlus.setOnClickListener {
             viewModel.changeNumber(true)
@@ -56,6 +66,7 @@ class HomeFragment : Fragment() {
         }
 
         binding.miregalBtn.setOnClickListener {
+            findNavController().navigate(R.id.dashFragment)
 
         }
 

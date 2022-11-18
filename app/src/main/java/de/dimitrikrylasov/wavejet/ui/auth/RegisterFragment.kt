@@ -64,7 +64,7 @@ class RegisterFragment : Fragment() {
             viewLifecycleOwner,
             Observer {
                 if (it != null) {
-                    findNavController().navigate(R.id.homeFragment)
+                    findNavController().navigate(R.id.bpmFragment)
                 }
 
             }
