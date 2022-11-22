@@ -19,6 +19,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -28,8 +30,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tiet_email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#009D6B"
+                android:layout_height="match_parent"
+                android:background="#CCCDC8FA"
                 android:hint="@string/email"
                 android:textColorHint="#212121" />
 
@@ -43,7 +45,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
-            android:background="#009E6B"
+            android:background="#CCB8B4DB"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/til_email">
@@ -69,6 +71,7 @@
             android:backgroundTint="@color/black"
             android:fontFamily="@font/rubik_mono_one"
             android:text="@string/login_button"
+            app:cornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/til_password"
@@ -83,6 +86,7 @@
             android:backgroundTint="@color/black"
             android:fontFamily="@font/rubik_mono_one"
             android:text="@string/register_button"
+            app:cornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lf_btn_login" />
@@ -91,24 +95,23 @@
             android:id="@+id/Login_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
             android:layout_marginBottom="8dp"
-            android:fontFamily="@font/rubik_mono_one"
+            android:fontFamily="@font/anton"
             android:text="@string/login"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="24sp"
+            android:textSize="34sp"
             app:layout_constraintBottom_toTopOf="@+id/til_email"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.85" />
+            app:layout_constraintTop_toBottomOf="@+id/logo_inapp" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/logo_inapp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/LOGO"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

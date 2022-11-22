@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="160dp"
-            android:fontFamily="@font/rubik_mono_one"
+            android:fontFamily="@font/anton"
             android:text="@string/success"
             android:textColor="#C1C1C1"
             android:textSize="24sp"
@@ -34,11 +34,13 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="160dp"
             android:layout_marginEnd="100dp"
-            android:backgroundTint="#000000"
-            android:fontFamily="@font/rubik_mono_one"
+            android:backgroundTint="#00000000"
+            android:fontFamily="@font/anton"
             android:text="@string/yes"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#00FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/hf_tv_success" />
 
@@ -46,7 +48,7 @@
             android:id="@+id/hf_tv_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/rubik_mono_one"
+            android:fontFamily="@font/anton"
             android:textColor="#C0C0C0"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -54,7 +56,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_bpm_yes"
             app:layout_constraintVertical_bias="0.100000024"
-            tools:text="0" />
+            tools:text="100" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -74,22 +76,22 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="15dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/rubik_mono_one"
+                android:fontFamily="@font/anton"
                 android:text="@string/minus"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/hf_btn_plus"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/rubik_mono_one"
+                android:fontFamily="@font/anton"
                 android:text="@string/plus"
                 android:textColor="#FFFFFF"
+                android:textSize="30sp"
                 app:iconTint="@color/purple_200" />
         </LinearLayout>
 
@@ -98,7 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#000000"
-            android:fontFamily="@font/rubik_mono_one"
+            android:fontFamily="@font/anton"
             android:text="@string/egal"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -113,7 +115,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="8dp"
-            android:fontFamily="@font/rubik_mono_one"
+            android:fontFamily="@font/anton"
             android:text="@string/tap_uns_deine_bpm_wir_versuchen_inhalte_basierend_deiner_jetzigen_angabe_zu_zeigen"
             android:textAlignment="center"
             android:textAllCaps="false"
@@ -126,7 +128,7 @@
             android:id="@+id/bpm_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/rubik_mono_one"
+            android:fontFamily="@font/anton"
             android:text="@string/bpm"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="@+id/hf_tv_number"
@@ -137,19 +139,19 @@
 
         <TextView
             android:id="@+id/bpm_infotext_mini"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_width="122dp"
+            android:layout_height="71dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:fontFamily="@font/rubik_mono_one"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/anton"
             android:text="@string/nat_rlich_kannst_du_sie_sp_ter_immer_noch_ndern"
             android:textAlignment="viewStart"
             android:textColor="#C4B7B7"
-            android:textSize="6sp"
+            android:textSize="11sp"
             app:layout_constraintBottom_toTopOf="@+id/btn_bpm_yes"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_bpm_info"
-            app:layout_constraintVertical_bias="0.36" />
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

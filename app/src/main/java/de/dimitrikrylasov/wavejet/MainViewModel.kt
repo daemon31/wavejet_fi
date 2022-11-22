@@ -62,7 +62,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun changeNumber(increase: Boolean) {
-        var newNumber: Long = 0
+        var newNumber: Long = 100
 
         newNumber = if (increase) {
             _numbers.value!!.number + 5
