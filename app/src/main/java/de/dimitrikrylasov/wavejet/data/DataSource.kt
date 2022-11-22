@@ -9,7 +9,7 @@ class DataSource {
     get() = _feedList
 
     private fun loadFeeds(): List<Feeds> {
-        return listOf(
+        return mutableListOf(
             Feeds("1", R.drawable.image_13),
             Feeds("2", R.drawable.image_14),
             Feeds("3", R.drawable.image_15),

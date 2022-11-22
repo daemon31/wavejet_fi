@@ -4,22 +4,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import de.dimitrikrylasov.wavejet.R
 import de.dimitrikrylasov.wavejet.data.model.Feeds
 import io.grpc.Context
 
 
-class ItemAdapter (
+class ItemAdapter(
     private val dataset: List<Feeds>,
-    private val context: Context
-    ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
+) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
 
         inner class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-            var feedImage: ImageView = itemView.findViewById(R.id.dashboard_feed_rcv)
+            var feedImage: ImageView = itemView.findViewById(R.id.dashboard_feed_img)
         }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {

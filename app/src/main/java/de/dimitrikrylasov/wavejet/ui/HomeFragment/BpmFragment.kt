@@ -13,6 +13,8 @@ import androidx.navigation.fragment.findNavController
 import de.dimitrikrylasov.wavejet.MainViewModel
 import de.dimitrikrylasov.wavejet.R
 import de.dimitrikrylasov.wavejet.databinding.FragmentBpmBinding
+import de.dimitrikrylasov.wavejet.ui.HomeFragment.BpmFragmentDirections.Companion.actionBpmFragmentToDashFragment
+import de.dimitrikrylasov.wavejet.ui.auth.LoginFragmentDirections
 
 /**
  * Fragment 1
@@ -48,13 +50,17 @@ class BpmFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnBpmYes.setOnClickListener{
-            if (it == null) {
-                findNavController().navigate(R.id.dashFragment)
-            }   else {
-                Log.e(ContentValues.TAG, "Da ist was schief gelaufen!")
-            }
+      //  binding.btnBpmYes.setOnClickListener{
+          //  if (it == null) {
+             //   findNavController().navigate(R.id.dashFragment)
+            //}   else {
+             //   Log.e(ContentValues.TAG, "Da ist was schief gelaufen!")
+           // }
 
+        //}
+
+        binding.btnBpmYes.setOnClickListener{
+            findNavController().navigate(R.id.dashFragment)
         }
 
         binding.hfBtnPlus.setOnClickListener {
@@ -66,7 +72,7 @@ class BpmFragment : Fragment() {
         }
 
         binding.miregalBtn.setOnClickListener {
-            findNavController().navigate(BpmFragmentDirections.actionBpmFragmentToDashFragment())
+            findNavController().navigate(R.id.dashFragment)
 
         }
 
