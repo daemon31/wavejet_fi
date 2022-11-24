@@ -8,10 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import de.dimitrikrylasov.wavejet.MainViewModel
 import de.dimitrikrylasov.wavejet.adapter.ItemAdapter
-import de.dimitrikrylasov.wavejet.data.DataSource
-import de.dimitrikrylasov.wavejet.data.model.Feeds
 import de.dimitrikrylasov.wavejet.databinding.DashboardFragmentBinding
-import de.dimitrikrylasov.wavejet.databinding.FragmentBpmBinding
 
 class DashFragment : Fragment() {
 

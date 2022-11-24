@@ -6,12 +6,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import de.dimitrikrylasov.wavejet.R
-import de.dimitrikrylasov.wavejet.data.model.Feeds
-import io.grpc.Context
+import de.dimitrikrylasov.wavejet.data.model.Events
 
 
 class ItemAdapter(
-    private val dataset: List<Feeds>,
+    private val dataset: List<Events>,
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
 

@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Conscious Rave",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/Conscious Rave.webp",
+    "entryfee": "7,00 €",
+    "date": "Wed Nov 23 2022 at 6:00 pm to 8:00 pm",
+    "location": "Crack Bellmer, Revaler Straße 99, Berlin, Germany",
+    "minBpm": 140,
+    "maxBpm": 160,
+    "more infos": "https://allevents.in/berlin/10000464246181827"
+  },
+  {
+    "id": 2,
+    "name": "Rave is King • New Year's Eve 22",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/Rave is King • New Year's Eve 22.jpg",
+    "entryfee": "12,00 €",
+    "date": "Sat Dec 31 2022 at 11:59 pm to Jan 1 2023 06:04 am",
+    "location": "Versteck, Cuvrystraße, Berlin, Germany",
+    "minBpm": 130,
+    "maxBpm": 145,
+    "more infos": "https://allevents.in/berlin/10000469919430667"
+  },
+  {
+    "id": 3,
+    "name": "NYE Rave 2022",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/NYE RAVE 2022.webp",
+    "entryfee": "15,00 €",
+    "date": "Sat Dec 31 2022 at 10:00 pm to Jan 1 2023 07:00 am",
+    "location": "ASeven Club & Eventlocation, Alexanderstraße 7, Berlin, Germany",
+    "minBpm": 128,
+    "maxBpm": 140,
+    "more infos": "https://allevents.in/berlin/10000427233205017"
+  },
+  {
+    "id": 4,
+    "name": "INFECTED x DRUMBULE",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/INFECTED x DRUMBULE.webp",
+    "entryfee": "12,00 €",
+    "date": "Sat Dec 3 2022 at 11:00 pm to Dec 4 2022 07:00 am",
+    "location": "VOID Club, Wiesenweg 5-9, Berlin, Germany",
+    "minBpm": 135,
+    "maxBpm": 155,
+    "more infos": "https://allevents.in/berlin/10000461886995437"
+  },
+  {
+    "id": 5,
+    "name": "Amsterdam Techno Records",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/Amsterdam Techno Records.webp",
+    "entryfee": "15,00 €",
+    "date": "Fri Dec 2 2022 at 10:00 pm to Dec 3 2022 06:00 am",
+    "location": "ASeven Club & Eventlocation, Alexanderstraße 7, Berlin, Germany",
+    "minBpm": 140,
+    "maxBpm": 160,
+    "more infos": "https://allevents.in/berlin/10000410740695477"
+  },
+  {
+    "id": 6,
+    "name": "[IL]LEGAL with DIØN & Zeuz",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/ILLEGAL with DIon & Zeuz.jpg",
+    "entryfee": "17,00 €",
+    "date": "Fri Nov 25 2022 at 11:00 pm to Nov 26 2022 09:00 am",
+    "location": "M-Bia, Dircksenstraße 123, Berlin, Germany",
+    "minBpm": 150,
+    "maxBpm": 170,
+    "more infos": "https://allevents.in/berlin/10000460183339757"
+  },
+  {
+    "id": 7,
+    "name": "KINDER der NACHT!",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/KINDER der NACHT!.webp",
+    "entryfee": "16,00 €",
+    "date": "Fri Nov 25 2022 at 10:00 pm to Nov 26 2022 07:00 am",
+    "location": "ASeven Club & Eventlocation, Alexanderstraße 7, Berlin, Germany",
+    "minBpm": 150,
+    "maxBpm": 170,
+    "more infos": "https://allevents.in/berlin/10000445471746987"
+  },
+  {
+    "id": 8,
+    "name": "Techno Tuesday Amsterdam, Raul Young, Dexon, Mark Mywords",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/Techno Tuesday Amsterdam.webp",
+    "entryfee": "free",
+    "date": "Tue Dec 6 2022 at 11:30 pm to Dec 7 2022 05:00 am",
+    "location": "Melkweg Amsterdam, Lijnbaansgracht 234a, Amsterdam, Netherlands",
+    "minBpm": 150,
+    "maxBpm": 170,
+    "more infos": "https://allevents.in/amsterdam/200023304247332"
+  },
+  {
+    "id": 9,
+    "name": "Techno Class X",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/Techno Class X.webp",
+    "entryfee": "free",
+    "date": "Fri Dec 16 2022 at 9:00 pm to Dec 17 2022 02:00 am",
+    "location": "Strandbar Stek, Waalplein 5,Nijmegen, Netherlands, Nijmegen, Netherlands",
+    "minBpm": 150,
+    "maxBpm": 170,
+    "more infos": "https://allevents.in/nijmegen/200023541438742"
+  },
+  {
+    "id": 10,
+    "name": "NACHTWACHT",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/NACHTWACHT.jpg",
+    "entryfee": "free",
+    "date": "Sat Dec 10 2022 at 9:00 pm to Dec 11 2022 02:00 am",
+    "location": "De Voorste Venne, Anton Pieckplein 71,Drunen, Netherlands, Drunen, Netherlands",
+    "minBpm": 150,
+    "maxBpm": 170,
+    "more infos": "https://allevents.in/drunen/200023661193019"
+  },
+  {
+    "id": 11,
+    "name": "NOEL HOLLER PRESENTS UNHOLY",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/NOEL HOLLER PRESENTS UNHOLY.webp",
+    "entryfee": "8,00 €",
+    "date": "Fri Dec 23 2022 at 10:00 pm to Dec 24 2022 05:00 am",
+    "location": "Dejavu Verl, Bergstr. 314,Verl, Verl, Germany",
+    "minBpm": 140,
+    "maxBpm": 160,
+    "more infos": "https://allevents.in/verl/200023650186514"
+  },
+  {
+    "id": 12,
+    "name": "Techno Rulez! - Winter Rave 2022",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/Techno Rulez! - Winter Rave 2022.webp",
+    "entryfee": "15,00 €",
+    "date": "Sat Dec 3 2022 at 9:00 pm",
+    "location": "Fusion Club, Am Hawerkamp 31, Münster, Germany",
+    "minBpm": 140,
+    "maxBpm": 160,
+    "more infos": "https://allevents.in/m%C3%BCnster/200023663209845"
+  },
+  {
+    "id": 13,
+    "name": "KlangTrauma / Alfred Heinrichs Live",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/KlangTrauma Alfred Heinrichs Live.jpg",
+    "entryfee": "15,00 €",
+    "date": "Sat Dec 17 2022 at 11:00 pm",
+    "location": "Aladin Music-Hall, Hannoversche Straße 11, Bremen, Germany",
+    "minBpm": 135,
+    "maxBpm": 155,
+    "more infos": "https://allevents.in/bremen/200023417139917"
+  },
+  {
+    "id": 14,
+    "name": "Kontrollverlust_Events @Druckluft Oberhausen",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/Kontrollverlust_Events @Druckluft Oberhausen.jpg",
+    "entryfee": "10,00 €",
+    "date": "Sat Dec 3 2022 at 10:00 pm to Dec 4 2022 06:00 am",
+    "location": "Druckluft, Am Förderturm 27, Oberhausen, Germany",
+    "minBpm": 150,
+    "maxBpm": 170,
+    "more infos": "https://allevents.in/oberhausen/200023614121731"
+  },
+  {
+    "id": 15,
+    "name": "Trude's 101% TECHNO mit MATT SASSAR",
+    "banner": "https://public.syntax-institut.de/apps/batch3/Dimitri/pics/Trude TECHNO.jpg",
+    "entryfee": "13,00 €",
+    "date": "Sat Dec 3 2022 at 11:00 pm to Dec 4 2022 05:00 am",
+    "location": "Muk Gießen, an der Automeile 16,Gießen, Germany, Gießen, Germany",
+    "minBpm": 150,
+    "maxBpm": 170,
+    "more infos": "https://allevents.in/gie%C3%9Fen/200023311917811"
+  }
+]
