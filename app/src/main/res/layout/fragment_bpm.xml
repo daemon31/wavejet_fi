@@ -12,6 +12,17 @@
         android:layout_height="match_parent"
         android:background="@drawable/we_own_the_night_a_generation_finds_its_identity_through_rave_culture_1">
 
+        <ImageView
+            android:id="@+id/logo_inapp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/LOGO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo1" />
+
         <TextView
             android:id="@+id/hf_tv_success"
             android:layout_width="wrap_content"
@@ -136,22 +147,6 @@
             app:layout_constraintHorizontal_bias="0.13"
             app:layout_constraintStart_toEndOf="@+id/hf_tv_number"
             app:layout_constraintTop_toTopOf="@+id/hf_tv_number" />
-
-        <TextView
-            android:id="@+id/bpm_infotext_mini"
-            android:layout_width="122dp"
-            android:layout_height="71dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="24dp"
-            android:fontFamily="@font/anton"
-            android:text="@string/nat_rlich_kannst_du_sie_sp_ter_immer_noch_ndern"
-            android:textAlignment="viewStart"
-            android:textColor="#C4B7B7"
-            android:textSize="11sp"
-            app:layout_constraintBottom_toTopOf="@+id/btn_bpm_yes"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_bpm_info"
-            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
