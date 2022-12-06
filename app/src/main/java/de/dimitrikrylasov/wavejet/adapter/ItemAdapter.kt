@@ -27,7 +27,7 @@ class ItemAdapter(
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
-        holder.feedImage.setImageResource(item.imageId)
+        holder.feedImage.setImageResource(item.banner)
     }
 
     override fun getItemCount(): Int {

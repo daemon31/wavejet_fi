@@ -38,5 +38,13 @@
     <fragment
         android:id="@+id/dashFragment"
         android:name="de.dimitrikrylasov.wavejet.ui.HomeFragment.DashFragment"
-        android:label="DashFragment" />
+        android:label="DashFragment" >
+        <action
+            android:id="@+id/action_dashFragment_to_shuttleLaunchFragment"
+            app:destination="@id/shuttleLaunchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shuttleLaunchFragment"
+        android:name="de.dimitrikrylasov.wavejet.ShuttleLaunchFragment"
+        android:label="ShuttleLaunchFragment" />
 </navigation>

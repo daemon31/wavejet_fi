@@ -10,34 +10,20 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/johnny_blaze">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/bottom_toolbar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="#B2000000"
-            android:minHeight="?attr/actionBarSize"
-            android:nestedScrollingEnabled="false"
-            android:theme="?attr/navigationViewStyle"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:navigationContentDescription="@string/LOGO" />
+        android:background="@drawable/_mzh641y">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/dashboard_recyclerview_vert"
-            android:layout_width="380dp"
-            android:layout_height="500dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="372dp"
+            android:layout_height="299dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintBottom_toTopOf="@+id/bottom_toolbar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.428"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dashboard_recyclerview_hori"
+            app:layout_constraintTop_toBottomOf="@+id/line_img2"
             tools:ignore="SpeakableTextPresentCheck"
             tools:itemCount="5"
             tools:listitem="@layout/list_item" />
@@ -46,111 +32,23 @@
             android:id="@+id/logo_inapp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
             android:contentDescription="@string/LOGO"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintHorizontal_bias="0.57"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logo1" />
-
-        <ImageButton
-            android:id="@+id/btn_tb_profil"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="24dp"
-            android:backgroundTint="#00FFFFFF"
-            android:minHeight="48dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/bottom_toolbar"
-            app:layout_constraintTop_toTopOf="@+id/bottom_toolbar"
-            app:srcCompat="@drawable/user"
-            app:tint="#FFFFFF" />
-
-        <ImageButton
-            android:id="@+id/btn_home_tb"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="24dp"
-            android:background="#00FFFFFF"
-            app:layout_constraintBottom_toBottomOf="@+id/bottom_toolbar"
-            app:layout_constraintStart_toStartOf="@+id/bottom_toolbar"
-            app:layout_constraintTop_toTopOf="@+id/bottom_toolbar"
-            app:srcCompat="@drawable/home"
-            app:tint="#FFFFFF" />
-
-        <ImageButton
-            android:id="@+id/btn_tb_search"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="24dp"
-            android:backgroundTint="#00FFFFFF"
-            app:layout_constraintBottom_toBottomOf="@+id/bottom_toolbar"
-            app:layout_constraintStart_toEndOf="@+id/btn_home_tb"
-            app:layout_constraintTop_toTopOf="@+id/bottom_toolbar"
-            app:layout_constraintVertical_bias="0.50"
-            app:srcCompat="@drawable/search"
-            app:tint="#FFFFFF" />
-
-        <ImageButton
-            android:id="@+id/btn_tb_compass"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:backgroundTint="#00FFFFFF"
-            app:layout_constraintBottom_toBottomOf="@+id/bottom_toolbar"
-            app:layout_constraintEnd_toStartOf="@+id/btn_tb_inbox"
-            app:layout_constraintStart_toEndOf="@+id/btn_tb_search"
-            app:layout_constraintTop_toTopOf="@+id/bottom_toolbar"
-            app:srcCompat="@drawable/compass"
-            app:tint="#FFFFFF" />
-
-        <ImageButton
-            android:id="@+id/btn_tb_inbox"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="24dp"
-            android:backgroundTint="#00FFFFFF"
-            app:layout_constraintBottom_toBottomOf="@+id/bottom_toolbar"
-            app:layout_constraintEnd_toStartOf="@+id/btn_tb_profil"
-            app:layout_constraintTop_toTopOf="@+id/bottom_toolbar"
-            app:srcCompat="@drawable/inbox"
-            app:tint="#FFFFFF" />
-
-        <ImageButton
-            android:id="@+id/btn_hamburger"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:backgroundTint="#00FFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.8"
-            app:layout_constraintStart_toEndOf="@+id/logo_inapp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/menu"
-            app:tint="#FFFFFF" />
-
-        <ImageButton
-            android:id="@+id/btn_logout"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:backgroundTint="#00FFFFFF"
-            app:layout_constraintEnd_toStartOf="@+id/logo_inapp"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/log_out"
-            app:tint="#FFFFFF" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/dashboard_recyclerview_hori"
             android:layout_width="380dp"
             android:layout_height="60dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
@@ -159,6 +57,89 @@
             app:layout_constraintTop_toBottomOf="@+id/logo_inapp"
             tools:itemCount="7"
             tools:listitem="@layout/list_item2" />
+
+        <TextView
+            android:id="@+id/event_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/suez_one"
+            android:text="events"
+            android:textColor="#F50057"
+            app:layout_constraintBottom_toTopOf="@+id/dashboard_recyclerview_vert"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_img2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/shares_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/suez_one"
+            android:textAlignment="center"
+            android:textColor="#F50057"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/dashboard_recyclerview_hori"
+            app:layout_constraintEnd_toStartOf="@+id/logo_inapp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="share's" />
+
+        <ImageView
+            android:id="@+id/line_img"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="64dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_recyclerview_hori"
+            app:srcCompat="@drawable/line"
+            app:tint="#925F5978" />
+
+        <ImageView
+            android:id="@+id/line_img2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/dashboard_recyclerview_vert"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/share_comments_rv"
+            app:srcCompat="@drawable/line"
+            app:tint="#925F5978" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/share_comments_rv"
+            android:layout_width="360dp"
+            android:layout_height="112.5dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/line_img2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_img"
+            app:layout_constraintVertical_bias="0.6" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

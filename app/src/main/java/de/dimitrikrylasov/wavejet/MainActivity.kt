@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.NavController
+import com.google.android.material.bottomnavigation.BottomNavigationItemView
 import de.dimitrikrylasov.wavejet.databinding.ActivityMainBinding
-
 /**
  * Main Activity, dient als Einstiegspunkt für die App
  */
@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
     /** Bindet das XML-View mit der Klasse um auf die Elemente zugreifen zu können */
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
-
     /* -------------------- Lifecycle -------------------- */
 
     /**
@@ -24,8 +23,10 @@ class MainActivity : AppCompatActivity() {
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         // Das Binding zur XML-Datei
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
     }
+
 }
