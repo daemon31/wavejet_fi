@@ -6,10 +6,15 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.viewModelScope
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.FirebaseFirestore
 import de.dimitrikrylasov.wavejet.data.Numbers
+import de.dimitrikrylasov.wavejet.data.local.getDatabase
+import de.dimitrikrylasov.wavejet.data.model.UserData
+import de.dimitrikrylasov.wavejet.data.remote.EventApi
+import kotlinx.coroutines.launch
 
 /**
  * Das MainViewModel
@@ -17,6 +22,16 @@ import de.dimitrikrylasov.wavejet.data.Numbers
 class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     /* -------------------- Klassen Variablen -------------------- */
+    private val database = getDatabase(application)
+    private val repository: Repository = Repository(EventApi, database)
+
+    var events = repository.events
+
+    fun getAllEvents() {
+        viewModelScope.launch {
+            repository.getAllEvents()
+        }
+    }
 
     private val firebaseAuth = FirebaseAuth.getInstance()
     val db = FirebaseFirestore.getInstance()
@@ -31,6 +46,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val currentUser: LiveData<FirebaseUser?>
         get() = _currentUser
 
+    private val _userData = MutableLiveData<UserData>()
+        val userData: LiveData<UserData>
+            get() = _userData
+
+
     fun login(email: String, password: String) {
         firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
             if (it.isSuccessful) {
@@ -40,6 +60,27 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             }
         }
     }
+
+    fun newProfile (){
+        viewModelScope.launch {
+            val userData = UserData(currentUser.value!!.uid)
+            database.userDatabaseDao.insert(userData)
+            _userData.value = userData
+        }
+    }
+    fun getProfile(){
+        viewModelScope.launch {
+            _userData.value = database.userDatabaseDao.getById(currentUser.value!!.uid)
+        }
+    }
+
+    fun updateProfile(userData: UserData){
+        viewModelScope.launch {
+            database.userDatabaseDao.update(userData)
+            _userData.value = userData
+        }
+    }
+
 
     fun logout() {
         firebaseAuth.signOut()

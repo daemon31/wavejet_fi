@@ -6,8 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
 import de.dimitrikrylasov.wavejet.MainViewModel
 import de.dimitrikrylasov.wavejet.adapter.ItemAdapter
+import de.dimitrikrylasov.wavejet.data.model.ApiResponse
+import de.dimitrikrylasov.wavejet.data.model.Events
 import de.dimitrikrylasov.wavejet.databinding.DashboardFragmentBinding
 
 class DashFragment : Fragment() {
@@ -22,15 +25,17 @@ class DashFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = DashboardFragmentBinding.inflate(inflater)
-
+        viewModel.getAllEvents()
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val Feeds = DataSource().feedList
 
-        val itemAdapter = ItemAdapter(Feeds)
-        binding.dashboardRecyclerviewVert.adapter = itemAdapter
+        viewModel.events.observe(
+            viewLifecycleOwner, Observer {
+                binding.dashboardRecyclerviewVert.adapter = ItemAdapter(it)
+            }
+        )
     }
 }

@@ -40,11 +40,44 @@
         android:name="de.dimitrikrylasov.wavejet.ui.HomeFragment.DashFragment"
         android:label="DashFragment" >
         <action
-            android:id="@+id/action_dashFragment_to_shuttleLaunchFragment"
-            app:destination="@id/shuttleLaunchFragment" />
+            android:id="@+id/action_dashFragment_to_bookmarkFragment"
+            app:destination="@id/bookmarkFragment" />
+        <action
+            android:id="@+id/action_dashFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
-        android:id="@+id/shuttleLaunchFragment"
-        android:name="de.dimitrikrylasov.wavejet.ShuttleLaunchFragment"
-        android:label="ShuttleLaunchFragment" />
+        android:id="@+id/bookmarkFragment"
+        android:name="de.dimitrikrylasov.wavejet.ui.profile.BookmarkFragment"
+        android:label="BookmarkFragment" >
+        <action
+            android:id="@+id/action_bookmarkFragment_to_dashFragment"
+            app:destination="@id/dashFragment" />
+        <action
+            android:id="@+id/action_bookmarkFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="de.dimitrikrylasov.wavejet.ui.HomeFragment.EventDetailFragment"
+        android:label="EventDetailFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="de.dimitrikrylasov.wavejet.ui.profile.ProfileFragment"
+        android:label="ProfileFragment">
+        <action
+            android:id="@+id/action_profileFragment_to_dashFragment"
+            app:destination="@id/dashFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_bookmarkFragment"
+            app:destination="@id/bookmarkFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_bookmarkFragment2"
+            app:destination="@id/bookmarkFragment"
+            app:popUpTo="@id/bookmarkFragment" />
+    </fragment>
+    <!-- <fragment
+         android:id="@+id/shuttleLaunchFragment"
+         android:name="de.dimitrikrylasov.wavejet.ShuttleLaunchFragment"
+         android:label="ShuttleLaunchFragment" />-->
 </navigation>

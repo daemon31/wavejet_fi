@@ -10,41 +10,29 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/dashboard_feeds_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="0dp"
-        android:layout_marginVertical="0dp"
-        android:layout_marginBottom="2dp"
-        android:alpha="10"
-        android:elevation="0dp"
-        app:cardBackgroundColor="#00AFACAC"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="0dp"
-        app:cardMaxElevation="0dp"
-        app:contentPadding="0dp">
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginVertical="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:cardCornerRadius="6dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/feed_event_img"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
 
             <ImageView
                 android:id="@+id/dashboard_feed_img"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginBottom="1dp"
-                android:background="#00FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:contentDescription="@string/feedsimage"
                 android:scaleType="fitXY"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/image_14"
-                tools:ignore="ImageContrastCheck" />
+                tools:srcCompat="@tools:sample/avatars" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>

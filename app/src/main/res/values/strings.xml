@@ -28,4 +28,8 @@
     <string name="shuttlepush">Shuttlepush</string>
     <string name="headphones">Headphones</string>
     <string name="profile">Profile</string>
+    <string name="events_txt_dash">Events</string>
+    <string name="line_img2">TODO</string>
+    <string name="return_btn">return_btn</string>
+    <string name="pf_edit_btn">pf_edit_btn</string>
 </resources>

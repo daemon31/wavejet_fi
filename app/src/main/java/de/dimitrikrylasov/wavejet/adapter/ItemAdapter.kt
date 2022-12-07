@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import de.dimitrikrylasov.wavejet.R
 import de.dimitrikrylasov.wavejet.data.model.Events
 
@@ -14,20 +15,20 @@ class ItemAdapter(
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
 
-        inner class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
 
-            var feedImage: ImageView = itemView.findViewById(R.id.dashboard_feed_img)
+            val image: ImageView = view.findViewById(R.id.dashboard_feed_img)
         }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-        val itemLayout  = LayoutInflater.from(parent.context)
+        val adapterLayout  = LayoutInflater.from(parent.context)
             .inflate(R.layout.list_item,parent,false)
-        return ItemViewHolder(itemLayout)
+        return ItemViewHolder(adapterLayout)
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
-        holder.feedImage.setImageResource(item.banner)
+        holder.image.load(item.banner)
     }
 
     override fun getItemCount(): Int {

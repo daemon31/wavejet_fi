@@ -10,22 +10,23 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/_mzh641y">
+        android:background="@drawable/city_far">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/dashboard_recyclerview_vert"
-            android:layout_width="372dp"
-            android:layout_height="299dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.428"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/line_img2"
-            tools:ignore="SpeakableTextPresentCheck"
-            tools:itemCount="5"
+            app:layout_constraintVertical_bias="0.8"
+            tools:itemCount="3"
             tools:listitem="@layout/list_item" />
 
         <ImageView
@@ -37,7 +38,6 @@
             android:layout_marginEnd="32dp"
             android:contentDescription="@string/LOGO"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.57"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logo1" />
@@ -52,94 +52,28 @@
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintHorizontal_bias="0.54"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/logo_inapp"
             tools:itemCount="7"
             tools:listitem="@layout/list_item2" />
-
-        <TextView
-            android:id="@+id/event_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="4dp"
-            android:fontFamily="@font/suez_one"
-            android:text="events"
-            android:textColor="#F50057"
-            app:layout_constraintBottom_toTopOf="@+id/dashboard_recyclerview_vert"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/line_img2"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <TextView
-            android:id="@+id/shares_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="4dp"
-            android:fontFamily="@font/suez_one"
-            android:textAlignment="center"
-            android:textColor="#F50057"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toTopOf="@+id/dashboard_recyclerview_hori"
-            app:layout_constraintEnd_toStartOf="@+id/logo_inapp"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            tools:text="share's" />
-
-        <ImageView
-            android:id="@+id/line_img"
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:layout_marginStart="64dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="64dp"
-            android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dashboard_recyclerview_hori"
-            app:srcCompat="@drawable/line"
-            app:tint="#925F5978" />
 
         <ImageView
             android:id="@+id/line_img2"
             android:layout_width="match_parent"
             android:layout_height="5dp"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
+            android:contentDescription="@string/line_img2"
             android:scaleType="fitXY"
-            app:layout_constraintBottom_toTopOf="@+id/dashboard_recyclerview_vert"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/share_comments_rv"
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_recyclerview_hori"
             app:srcCompat="@drawable/line"
-            app:tint="#925F5978" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/share_comments_rv"
-            android:layout_width="360dp"
-            android:layout_height="112.5dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/line_img2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.488"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/line_img"
-            app:layout_constraintVertical_bias="0.6" />
+            app:tint="#92988DCA"
+            tools:ignore="ImageContrastCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
