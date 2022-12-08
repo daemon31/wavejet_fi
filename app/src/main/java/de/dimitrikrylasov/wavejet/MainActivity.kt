@@ -28,14 +28,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
-
         val navView: BottomNavigationView = binding.bottomNavbar
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
 
-       // navController = findNavController(R.id.nav_host_fragment)
 
         navView.setupWithNavController(navController)
         navController.addOnDestinationChangedListener { _, destination, _ ->
