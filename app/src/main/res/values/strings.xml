@@ -9,7 +9,7 @@
     <string name="logout">Logout</string>
     <string name="plus">+</string>
     <string name="minus">-</string>
-    <string name="tap_uns_deine_bpm_wir_versuchen_inhalte_basierend_deiner_jetzigen_angabe_zu_zeigen">Tap uns deine BPM &amp; wir versuchen Inhalte basierend deiner jetzigen Angabe zu zeigen!</string>
+    <string name="tap_uns_deine_bpm_wir_versuchen_inhalte_basierend_deiner_jetzigen_angabe_zu_zeigen">Wie schnell hörstn so?</string>
     <string name="yes">YES!</string>
     <string name="egal">Egal</string>
     <string name="login">LOGIN</string>
@@ -25,11 +25,14 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
     <string name="bookmark">Bookmark</string>
-    <string name="shuttlepush">Shuttlepush</string>
-    <string name="headphones">Headphones</string>
+    <string name="musiclib">MusLib</string>
+    <string name="BPMC">bpmCount</string>
     <string name="profile">Profile</string>
     <string name="events_txt_dash">Events</string>
     <string name="line_img2">TODO</string>
     <string name="return_btn">return_btn</string>
     <string name="pf_edit_btn">pf_edit_btn</string>
+    <string name="edit">Edit</string>
+    <string name="bpmc_result">count</string>
+    <string name="bpmc_btn_txt">TAP</string>
 </resources>

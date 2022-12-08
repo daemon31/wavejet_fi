@@ -3,6 +3,7 @@ package de.dimitrikrylasov.wavejet
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import androidx.databinding.DataBindingUtil.inflate
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -19,42 +20,34 @@ import de.dimitrikrylasov.wavejet.databinding.ActivityMainBinding
  */
 class MainActivity : AppCompatActivity() {
 
-    /* -------------------- Klassen Variablen -------------------- */
+        private lateinit var binding: ActivityMainBinding
+        private lateinit var navController: NavController
 
-    /** Bindet das XML-View mit der Klasse um auf die Elemente zugreifen zu können */
-    private lateinit var binding: ActivityMainBinding
-    private lateinit var navController: NavController
-    /* -------------------- Lifecycle -------------------- */
-
-    /**
-     * Lifecycle Methode, wird aufgerufen wenn Activity erstellt wird
-     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        // Das Binding zur XML-Datei
 
-        // Die Navigationsleiste am unteren Bildschirmrand wird eingerichtet
-        val navView: BottomNavigationView = binding.bottomNavBar
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+
+        val navView: BottomNavigationView = binding.bottomNavbar
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
-        // Hier wird der Nav Controller zugewiesen und die Action Bar damit eingerichtet
-        //navController = findNavController(R.id.nav_host_fragment)
-        //setupActionBarWithNavController(this, navController)
 
-        // Richtet die Navigation Bar ein, sodass sie mit dem Nav Controller verknüpft ist
+       // navController = findNavController(R.id.nav_host_fragment)
+
         navView.setupWithNavController(navController)
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
-                R.id.loginFragment -> binding.bottomNavBar.visibility = View.GONE
-                R.id.registerFragment -> binding.bottomNavBar.visibility = View.GONE
-                R.id.bpmFragment -> binding.bottomNavBar.visibility = View.GONE
-                else -> binding.bottomNavBar.visibility = View.VISIBLE
+                    R.id.loginFragment -> binding.bottomNavbar.visibility = View.GONE
+                    R.id.registerFragment -> binding.bottomNavbar.visibility = View.GONE
+                    R.id.bpmFragment -> binding.bottomNavbar.visibility = View.GONE
+                else -> binding.bottomNavbar.visibility = View.VISIBLE
             }
         }
     }
+
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }

@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/_thelist_new_york_s_most_historic_night_clubs">
+        android:background="@drawable/red_city_start_wp">
 
         <Button
             android:id="@+id/rf_btn_register"
@@ -19,8 +19,8 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="100dp"
-            android:backgroundTint="#CC4E5665"
-            android:fontFamily="@font/rubik_mono_one"
+            android:backgroundTint="@color/teal_700"
+            android:fontFamily="@font/press_start_2p"
             android:text="@string/register_button"
             app:cornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -33,10 +33,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
             android:layout_marginEnd="100dp"
-            android:backgroundTint="#CC505867"
-            android:fontFamily="@font/rubik_mono_one"
+            android:backgroundTint="@color/teal_700"
+            android:fontFamily="@font/press_start_2p"
             android:text="@string/back"
-            android:textColor="#C5CAE9"
             app:cornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.505"
@@ -98,8 +97,7 @@
             android:id="@+id/Register_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            android:fontFamily="@font/anton"
+            android:fontFamily="@font/press_start_2p"
             android:text="@string/register"
             android:textColor="#FFFFFF"
             android:textSize="34sp"
@@ -107,14 +105,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.8" />
+            app:layout_constraintVertical_bias="0.72" />
 
         <ImageView
             android:id="@+id/logo_inapp1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
             android:contentDescription="@string/LOGO"
-            app:layout_constraintBottom_toTopOf="@+id/Register_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

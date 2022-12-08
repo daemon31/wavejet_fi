@@ -76,8 +76,4 @@
             app:destination="@id/bookmarkFragment"
             app:popUpTo="@id/bookmarkFragment" />
     </fragment>
-    <!-- <fragment
-         android:id="@+id/shuttleLaunchFragment"
-         android:name="de.dimitrikrylasov.wavejet.ShuttleLaunchFragment"
-         android:label="ShuttleLaunchFragment" />-->
 </navigation>
