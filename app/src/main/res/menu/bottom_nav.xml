@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/home"
+        android:id="@+id/dashFragment"
+        android:icon="@drawable/home"/>
+    <item android:title="@string/bookmark"
+        android:icon="@drawable/star"
+        android:id="@+id/bookmarkFragment" />
+    <item android:title="@string/musiclib"
+        android:icon="@drawable/music_library"
+        android:id="@+id/MuslibFragment"/>
+    <item
+        android:id="@+id/bpmc"
+        android:icon="@drawable/soundwave"
+        android:title="@string/BPMC" />
+    <item android:title="@string/profile"
+        android:icon="@drawable/humanoid_profile"
+        android:id="@+id/profileFragment"/>
+</menu>
